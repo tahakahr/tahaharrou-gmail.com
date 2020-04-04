@@ -1,0 +1,26 @@
+.header{position: absolute;top: 0; left: 0; right: 0;height: 60px;
+ line-height: 60px;color: black;text-transform: uppercase;text-align: center;
+ background-color: #11a7ab
+}
+.body{
+	background-color: #1f253d;
+}
+.nav{
+	position: absolute;bottom: 0; left: 0; right: 0;height: 75px;line-height: 50px;text-align: center;background-color: #4f597b;
+}
+.view{
+	position: absolute;
+	top: 60px; right: 0; bottom: 60px; left: 0;
+	color: white;
+}
+.pannel{
+	position: absolute;
+	top: 0; left: 0; right: 0; bottom: 0;
+	overflow-x:hidden;
+	overflow-y: scroll;
+	-webkit-overflow-scrolling:touch;
+	@include transition-delay: 5s;
+}
+.left{@include transform(translate3d(-100%, 0, 0));}
+.center{@include transform(translate3d(0%, 0, 0));}
+.right{@include transform(translate3d(-100%, 0, 0));}
